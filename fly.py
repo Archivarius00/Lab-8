@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import time
 
-
 def overlay_image_center(frame, img_to_overlay, x, y, w, h):
     center_x = x + w // 2
     center_y = y + h // 2
@@ -58,7 +57,7 @@ def overlay_image_center(frame, img_to_overlay, x, y, w, h):
 
 overlay_image = cv2.imread('fly64.png')
 if overlay_image is None:
-    print("Ошибка: Не удалось загрузить fly64.png")
+    print("Ошибка")
     exit()
 
 cap = cv2.VideoCapture(0)

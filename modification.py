@@ -6,7 +6,6 @@ def count_rectangle_hits(frame, x, w, left_count, right_count):
     frame_width = frame.shape[1]
     center_x = x + w // 2
 
-    # Определяем, в какой половине находится центр прямоугольника
     if center_x < frame_width // 2:
         left_count += 1
     else:
